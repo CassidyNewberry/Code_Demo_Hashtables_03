@@ -17,7 +17,7 @@ Finally, the integer is converted to an index in the put function.
 <img src="Figures/hash_code.png" width="80%">
 
 ### Hash Put Function
-After converting the key-value to an integer through the hashcode function, the integer is modified to an index in the hash table through 'index = hashcode(key) % len(hashtable)'. This modification of modulo against the hash table's size would make sure the key-value fits into the hash table. The variable index is where the key-value would be stored in or is already located in the hash table: 'hashtable[index]'. We would assign a variable name 'bucket' to this specific location 'hashtable[index]' for reference. Recall from the introduction that each index in the hash table is a list of records. Hence,we can search for our key-value by going through records in the bucket. If the key-value is already in the bucket, we will update that key-value pair with our current inputting key-value pair. If it is not in the bucket, we can append the key-value pair into the bucket. Through this process, we would be able to store our data into a hash table data structure.
+After converting the key-value to an integer through the hashcode function, the integer is modified to an index in the hash table through 'index = hashcode(key) % len(hashtable)'. This modification of modulo against the hash table's size would make sure the key-value fits into the hash table. The variable index is where the key-value would be stored in or is already located in the hash table: 'hashtable[index]'. We would assign a variable name 'bucket' to this specific location 'hashtable[index]' for reference. Recall from the introduction that each index in the hash table is a list of records. Hence, we can search for our key-value by going through records in the bucket. If the key-value is already in the bucket, we will update that key-value pair with our current inputting key-value pair. If it is not in the bucket, we can append the key-value pair into the bucket. Through this process, we would be able to store our data into a hash table data structure.
 
 <img src="Figures/hash_put.png" width="85%">
 
@@ -27,6 +27,6 @@ Retrieving the value from the hash table follows a similar process as the hash f
 <img src="Figures/hash_get.png" width="67%">
 
 ## Conclusion
-Hash tables are efficient data structures that enable fast lookups and data updates. A good hash table is able to evenly partition the set of keys to their respective values over a large lookup space. However, the one time cost of setting up the index does consume memory and if the search space is altered significantly, we need to recompute the index. Despite the minor drawbacks, hash tables are very useful in modern data science applications.
+Hash tables are efficient data structures that enable fast lookups and data updates. A good hash table can evenly partition the set of keys to their respective values over a large lookup space. However, the one-time cost of setting up the index does consume memory and if the search space is altered significantly, we need to recompute the index. Despite the minor drawbacks, hash tables are very useful in modern data science applications.
 
 
