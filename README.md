@@ -8,7 +8,7 @@ A concrete implementation of a hash table is often a list of lists. Each sublist
 
 As you can see in the hash table graphic above, John Smith and his phone number are stored as a key-value pair in bucket 873. Now, when a user wants to find John Smith and his phone number, they only have to look through bucket 873 instead of all 999 buckets.
 
-## Code Implementation for a Hash Table as a List of Lists:
+## Code Implementation for a Hash Table as a List of Lists
 ### Hashcode Function
 To partition the keys into buckets of the hash table, the keys are converted to indexes. The keys could be integers or strings. If the keys are integers, they can easily be converted to required indexes but string keys first need to be converted to integers. The hashcode function is used to perform this conversion. The input for the hashcode function is the key. If the key is an integer, it returns the key itself but if it’s a string, the expression abs(ord(key[0]) - ord('a')) converts the string to an integer. This expression calculates the Unicode of the first character of the key using the ord() function available in python 3. Then, normalizes it by subtracting the Unicode of the lower case alphabet ‘a’. The absolute value of this expression gives the final integer corresponding to that string key. 
 
