@@ -1,2 +1,5 @@
-# Code_Demo_Hashtables_03
-Hash Tables Code Demo - Section 3
+## Hash Table
+# Introduction
+A hash table is a data structure that can store values or key-value pairs in a way that is extremely efficient when searching for a single value. A hash table can store values or key-value pairs in different buckets so the program does not have to search through the entire structure to find a value, it only has to look through the bucket where the value is stored. Every hash table has a hash function that partitions the values into different buckets. The hash function is implemented in a way that assigns a value to a bucket index based on some characteristic of the value.
+A concrete implementation of a hash table is often a list of lists. Each sublist of the list would be considered a bucket. The hash function would return an index of the array where the value or key-value pair should be stored. If the hash table is storing values, the hash table should be implemented to store that value in the index provided by hash(value). If the hash table is storing key-value pairs it should be implemented to store the key-value pair as a tuple in the index provided by hash(key). If the hash table is implemented effectively, each bucket should contain around the same number of values. A perfect hash table implementation would only have one value per bucket, making the search time very efficient at O(1).  
+<img src="Figures/hash_table.png" width="100%">
